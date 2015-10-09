@@ -51,9 +51,9 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   font: 14px/1.5 DejaVu Sans Mono, Monospace;
-  color: #A3BFC6 ;
+  color: #E79E3C;
   font-weight: normal;
-  background: #222A30;
+  background: #001514;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #EC4E3B;
+  color: #DE6546;
   margin: 0 0 10px;
   font-family: DejaVu Sans Mono, "dejavu_sans_monobook", Monospace;
   font-weight: normal;
@@ -93,11 +93,11 @@ h3 {
   line-height: 24px;
   font-family: DejaVu Sans Mono, "dejavu_sans_monobook", Monospace !important;
   font-weight: normal;
-  color: #b6b6b6;
+  color: #E47833;
 }
 
 a {
-  color: #49B1F7;
+  color: #00C200;
   font-weight: 400;
   text-decoration: none;
 }
@@ -242,7 +242,7 @@ section #title h1 {
 }
 
 section #title p {
-  color: #B3D1F0;
+  color: #B98000;
   font-family: 'dejavu_sans_monobook', monospace;
   font-weight: normal;
   font-size: 18px;
@@ -287,7 +287,7 @@ footer .right{
   margin: 0 0 10px;
   font-family: 'dejavu_sans_monobook', monospace;
   font-weight: normal;
-  color: #A3BFC6;
+  color: #B98000;
 }
 
 .tags{
