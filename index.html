@@ -1,0 +1,18 @@
+---
+layout: welcome
+
+---
+<div class="post-header-home">
+  {% assign post = site.posts.first %}
+  <h1>
+    <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+  </h1>
+  {% include post-header-home.html %}
+</div>
+<div class="post-excerpt-home">
+  {{ post.excerpt }}
+  <p class="text-left"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
+</div>
+ <div class="text-center">
+  <p>contact me <a href="mailto:sleaker@gmail.com">sleaker (at) gmail.com</a></p>
+</div>
