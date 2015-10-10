@@ -5,7 +5,7 @@ tags: [blog]
 
 
 ###Where to Begin
-A couple days ago I thought I should look into doing a blog site.  I've been thinking it would be a great way to show off the things that I've been working on, and give me a concrete place to write about the things I'm learning.  The first thing that I looked for was a CMS of some sort that was 'git-backed' but this didn't really turn up anything useful. There are a few frameworks out there, but really I realized I just needed a simple way to statically host a blog.  I found [Jekyll] which ended up being able to fulfill exactly the niche that I am looking for.
+A couple days ago I thought I should look into doing a blog site.  I've been thinking it would be a great way to show off the things that I've been working on, and give me a concrete place to write about the things I'm learning.  The first thing that I looked for was a CMS of some sort that was 'git-backed' but this didn't really turn up anything useful. There are a few frameworks out there to accomplish this, but I realized I just needed a simple way to statically host a blog.  I found [Jekyll] which ended up being able to fulfill exactly the niche that I am looking for.
 
 ###Jekyll
 So Jekyll was a bit confusing at first, I'm accustomed to server software that hosts specific websites that you've built.  Instead jekyll builds out the website from templates and then dumps the content into a servable directory.  After getting jekyll installed and playing around with a few of the configuration variables I want on the search for some alternative pre-built templates. [autm-rb] is what I found, and I ended up customizing it for myself.  So that's where we are at now. A nice little blog where I can post.

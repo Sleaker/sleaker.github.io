@@ -2,9 +2,9 @@ baseurl: ""
 url: "https://sleaker.github.io" # the base hostname & protocol for your site.
 title: "Nick's Tech Blog"
 description: >
-    Write something about you here...
+    Hello, my name is Nick. These are my thoughts and struggles with software development.
 
-paginate: 3 #articles per page
+paginate: 5 #articles per page
 paginate_path: /blog/page:num #makes pagination working
 
 
@@ -12,6 +12,7 @@ paginate_path: /blog/page:num #makes pagination working
 git: "https://github.com/sleaker"  #Add your github url here.
 stackoverflow: "" #Add your stackoverflow url here.
 twitter: "https://twitter.com/sleaker_"  #Add your twitter url here.
+email: "sleaker@gmail.com"
 
 #disqus comment
 disqus:

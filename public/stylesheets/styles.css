@@ -93,17 +93,17 @@ h3 {
   line-height: 24px;
   font-family: DejaVu Sans Mono, "dejavu_sans_monobook", Monospace !important;
   font-weight: normal;
-  color: #E47833;
+  color: #EC4E3B;
 }
 
 a {
-  color: #00C200;
+  color: #3CAD34;
   font-weight: 400;
   text-decoration: none;
 }
 
 a:hover {
-  color: #EC4E3B;
+  color: #FCCD25;
 }
 
 a:hover, a:active, a:focus, a:visited  {
@@ -118,14 +118,12 @@ a small {
   display: block;
 }
 
-a#git-ic{
-  font-size:37px;
-  color:#fff;
+a#header-icon {
+  color: #FFFFFF;
 }
 
-a#so-ic{
-  font-size:32px;
-  color:#fff;
+a#header-icon:hover {
+  color: #FCCD25;
 }
 
 strong {
@@ -207,7 +205,7 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #49B1F7;
+  border-bottom: 1px dashed #3CAD34;
 }
 
 dt {
