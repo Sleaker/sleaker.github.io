@@ -304,6 +304,10 @@ footer .nav {
   margin: 0 10px 10px 0;
 }
 
+.gplus {
+  cursor: pointer;
+}
+
 /* just change the class on /index.html pln-img or circular
 
 /* for not circled image */
