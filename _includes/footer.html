@@ -1,6 +1,6 @@
 <footer>
   <hr/>
-  <div class="left">
+  <div class="nav left">
     {% unless site.git == "" %}
       <a id="header-icon" href="{{site.git}}"><i class="fa fa-github"></i></a>
     {% endunless %}
@@ -9,11 +9,11 @@
     {% endunless %}
     {% unless site.twitter == "" %}
       <a href="{{site.twitter}}"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a>
-    {% endunless %} - 
+    {% endunless %} -
     &copy; {{ site.time | date:"%Y" }} Nick Minkler
   </div>
 
-  <div class="right">
+  <div class="nav right">
     Built with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/railsr/autm-rb">Autm-rb</a>
   </div>
 </footer>

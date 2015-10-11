@@ -1,7 +1,22 @@
+<script>
+  $(function() {
+    $("#title-anim").typed({
+      stringsElement: $('#subtitle'),
+      typeSpeed: 30,
+      backDelay: 1000,
+      loop: false
+    });
+  });
+</script>
 <div id="title">
-  <h1><a id="sitename" href="{{site.baseurl}}">{{site.title}}</a></h1>
+  <h1>Nick's Tech Blog</h1>
+  <p>
+    <span id="title-anim"></span>
+  </p>
+  <div id="subtitle">
+    <p>{{site.description}}</p>
+  </div>
 
-  <p>{{site.description}}</p>
   <hr/>
 
   {% include nav-links.html %}
