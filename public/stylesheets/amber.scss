@@ -1,0 +1,91 @@
+---
+---
+// Color stuff
+$gray-darker:            #1D1B16;
+$gray-dark:              #202C39;   // #333
+$gray:                   #495559; // #555
+$gray-light:             #617073; // #777
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+/* $brand-primary:         #428bca !default; */
+$brand-primary:         $gray-light;
+$control-element:       #B28500;
+
+$body-bg:               $gray-darker;
+$text-color:            #FFBF00;
+$header-color:          #FF9900;
+$small-header:          #CC5800;
+
+$link-color:            $control-element;
+$link-hover-color:      #FCCD25;
+
+
+/* main */
+
+body {
+  color: $text-color;
+  background: $body-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+}
+
+h3 {
+  color: $small-header;
+}
+
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-hover-color;
+}
+
+a#header-icon:hover {
+  color: $link-hover-color;
+}
+
+blockquote {
+  border-left: 3px solid #ffcc00;
+}
+
+code {
+  color: #848282;
+}
+
+pre {
+  background: #1D1D1F;
+  border: 1px solid #1A1A1C;
+}
+
+pre code {
+  color: #efefef;
+  text-shadow: 0px 1px 0px #000;
+}
+
+table {
+  border: 1px solid $control-element;
+  border-color: $control-element;
+}
+
+th {
+  border: 1px solid $control-element;
+}
+
+td {
+  border: 1px solid $control-element;
+}
+
+tr {
+  border: 1px solid $control-element;
+}
+
+section #title p {
+  color: $link-hover-color;
+}
+
+section #title .title-anim {
+  color: $link-hover-color;
+}
