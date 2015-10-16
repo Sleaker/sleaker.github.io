@@ -17,20 +17,21 @@ layout: default
 {% if site.data.theme.show_post_navs %}
   {% if page.previous or page.next %}
     <tr>
-      <td>
-        <div class="padded">
+      <td class="left-half-td">
+        <div>
           {% if page.previous %}
-            <a href="{{ page.previous.url | prepend:site.baseurl }}">&larr; Previous </a> {{ page.previous.title }}
+            <a href="{{ page.previous.url | prepend:site.baseurl }}"><i class="fa fa-arrow-left"></i> Previous Post</a> - {{ page.previous.title }}
+          {% else %}
+            <i class="fa fa-arrow-left"></i> Previous Post
           {% endif %}
+        </div>
+      </td>
+      <td class="right-half-td">
+        <div>
           {% if page.next %}
-            <h3 class="section-header">Newer
-              {% unless page.previous %}
-                <span class="text-muted"> &middot; </span>
-                <a href="{{ "/archive" | prepend:site.baseurl }}">View Archive ({{ site.posts.size }})</a>
-              {% endunless %}
-            </h3>
-            <h2 class="post-title-link"><a href="{{ page.next.url | prepend:site.baseurl }}">{{ page.next.title }}</a></h2>
-            {{ page.next.excerpt | markdownify }}
+            {{ page.next.title }} - <a href="{{ page.next.url | prepend:site.baseurl }}">Next Post <i class="fa fa-arrow-right"></i></a>
+          {% else %}
+             Next Post <i class="fa fa-arrow-right"></i>
           {% endif %}
         </div>
       </td>
@@ -38,7 +39,7 @@ layout: default
   {% endif %}
 {% endif %}
 <tr>
-  <td>
+  <td colspan="2">
       <div class="comments padded">
         {% include disqus.html%}
       </div>
