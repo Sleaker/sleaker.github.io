@@ -3,12 +3,13 @@ title: projects
 permalink: "/projects/index.html"
 layout: default
 ---
-<tr>
-  <td>
-    <div class="padded">
-      <h3> <a href="https://www.github.com/Milkbowl/Vault">Vault</a></h3>
-      <p>I helped build and improve Vault because I needed a universal API to access multiple economy, permission and data plugins from within my own Bukkit projects.  This is what lead to the creation of Vault as a standalone project.  It is now used on around <a href="http://mcstats.org/plugin/Vault">50,000 servers</a> worldwide daily.
-      </p>
-    </div>
-  </td>
-</tr>
+
+{% for project in site.projects %}
+  <tr>
+    <td>
+      <div class="padded">
+        {{ project.content }}
+      </div>
+    </td>
+  </tr>
+{% endfor %}
