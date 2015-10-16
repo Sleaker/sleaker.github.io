@@ -23,12 +23,13 @@
     <div class="wrapper">
         <section>
           {% include title.html %}
-
-          {{ content }}
-
+          <div class="content-table">
+            <table>
+              {{ content }}
+            </table>
+          </div>
           {% include footer.html %}
         </section>
-    </div>
     </div>
     {% include scripts.html %}
   </body>

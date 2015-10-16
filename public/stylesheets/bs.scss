@@ -164,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
+pre, table {
+  margin: 20px 0 20px;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
+p, ul, ol, dl {
+  margin: 0;
 }
 
 h1 {
@@ -180,15 +180,12 @@ h2 {
   font-size: 24px;
 }
 
-h4, h5, h6 {
-  color: #e8e8e8;
-}
-
 h3 {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
   color: #EC4E3B;
+  padding-left: 20px;
 }
 
 a {
@@ -280,6 +277,7 @@ table {
   border-spacing: 2px;
   text-align: center;
   font-family: $font-family-base !important;
+  margin-bottom: 0;
 }
 
 th {
@@ -301,6 +299,7 @@ th {
 td {
   border-collapse: separate;
   border: 1px solid #3CAD34;
+  padding: 2px 9px 0px 9px;
 }
 
 tr {
@@ -324,7 +323,7 @@ section {
   max-width: 960px;/*  //750*/
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 section .p-title{
@@ -354,16 +353,15 @@ section #title .title-anim {
   position: relative;
 }
 
-.navbar {
-  margin-bottom: 0px;
-  border: none;
-}
-
 section #title .nav {
   font-size: 14px;
   color: #3CAD34;
   margin-bottom: 0px;
   text-align: left;
+}
+
+.nav table {
+  border-bottom: 0;
 }
 
 .left {
@@ -374,6 +372,23 @@ section #title .nav {
   float: right;
 }
 
+.top {
+  vertical-align: top;
+}
+
+.padded {
+    padding: 10px;
+}
+
+.pad3 {
+  padding: 0 10px 10px 10px
+}
+
+.padvert {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .section-header-archive, .tag_name {
 	margin:  15px 0 0 0;
 }
@@ -382,12 +397,32 @@ section #title .nav {
   margin-bottom: 15px;
 }
 
+.content-table table {
+  text-align: left;
+  border-top: 0;
+  border-bottom: 0;
+  margin-top: -2px;
+}
+
 .resume p {
-  font-size: 15px;
-  line-height: 24px;
-  margin: 0 0 10px;
-  font-weight: normal;
   color: #B98000;
+}
+
+footer table {
+  margin-top: -2px;
+  border-top: 0px;
+}
+
+footer .left-half-td {
+  width: 50%;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+footer .right-half-td {
+  width: 50%;
+  text-align: right;
+  padding-bottom: 2px;
 }
 
 .tags {
@@ -402,8 +437,6 @@ section #title .nav {
 .gplus {
   cursor: pointer;
 }
-
-/* just change the class on /index.html pln-img or circular
 
 /* for not circled image */
 .pln-img {
@@ -421,10 +454,6 @@ section #title .nav {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   margin-bottom: 15px;
-}
-
-#title #sitename,.resume span,.resume h2 {
-  color: #EC4E3B;
 }
 
 /* Typed Cursor */

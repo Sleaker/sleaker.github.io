@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-<div class="post-header-home">
-  {% assign post = site.posts.first %}
-  <h1>{{ post.title }}</h1>
-  {% include post-header-home.html %}
-</div>
-<div class="post-excerpt-home">
-  {{ post.excerpt }}
-  <p class="text-left"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
-</div>
+<tr>
+  <td>
+    <div class="padded">
+      <div class="post-header-home">
+        {% assign post = site.posts.first %}
+        <h1>{{ post.title }}</h1>
+        {% include post-header-home.html %}
+      </div>
+      <div class="post-excerpt-home padvert">
+        {{ post.excerpt }}
+        <p class="text-left padded"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
+      </div>
+    </div>
+  </tr>
+</td>
