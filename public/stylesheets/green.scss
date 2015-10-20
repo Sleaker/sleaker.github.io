@@ -2,9 +2,9 @@
 ---
 // Color stuff
 $gray-darker:            #1D1B16;
-$gray-dark:              #202C39;   // #333
-$gray:                   #495559; // #555
-$gray-light:             #617073; // #777
+$gray-dark:              #202C39;
+$gray:                   #495559;
+$gray-light:             #617073;
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 /* $brand-primary:         #428bca !default; */
@@ -12,11 +12,11 @@ $brand-primary:         $gray-light;
 $control-element:       #B28500;
 
 $body-bg:               $gray-darker;
-$text-color:            #FFBF00;
+$text-color:            #3CAD34;
 $header-color:          #FF9900;
 $small-header:          #CC5800;
 
-$link-color:            #3CAD34;
+$link-color:            #FFBF00;
 $link-hover-color:      #FCCD25;
 
 

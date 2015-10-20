@@ -14,9 +14,23 @@
 	}());
 </script>
 <!-- /disqus comment counter -->
-		
-		
-		
+
+<!-- jquery stylesheet switcher -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#color-amber").click(function() {
+      $("#color-scheme").attr("href", $(this).attr("rel"));
+      return false;
+    });
+
+    $("#color-green").click(function() {
+      $("#color-scheme").attr("href", $(this).attr("rel"));
+      return false;
+    });
+  });
+</script>
+<!-- jquery stylesheet switcher -->
+
 <!-- google analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
