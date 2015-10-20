@@ -17,14 +17,19 @@
 
 <!-- jquery stylesheet switcher -->
 <script type="text/javascript">
+  if (Cookies.get("theme")) {
+    $("#color-scheme").attr("href", Cookies.get("theme"));
+  }
   $(document).ready(function() {
     $("#color-amber").click(function() {
-      $("#color-scheme").attr("href", $(this).attr("rel"));
+      $("#color-scheme").attr("href", $(this).attr('rel'));
+      Cookies.set("theme", $(this).attr('rel'), {expires: 365, path: '/'});
       return false;
     });
 
     $("#color-green").click(function() {
-      $("#color-scheme").attr("href", $(this).attr("rel"));
+      $("#color-scheme").attr("href", $(this).attr('rel'));
+      Cookies.set("theme", $(this).attr('rel'), {expires: 365, path: '/'});
       return false;
     });
   });
