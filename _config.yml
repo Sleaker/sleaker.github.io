@@ -19,8 +19,10 @@ disqus:
 #google analytics
 google:
     tracking-id: "UA-27809169-3" #paste your tracking id here
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-paginate
+  - disqus-for-jekyll
 
 # This is used by feed.xml. Uncomment if you want to use it.
 # description: "..."
